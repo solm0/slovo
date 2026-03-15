@@ -22,15 +22,18 @@ type Preset = {
 }
 
 const PRESETS: Preset[] = [
+  { name: "ink",   blur: 3.5,   contrast: 20.0,  strokeWidth: 0.0, bgColor: "#ffffff", fontColor: "#000000", strokeColor: "#ffffff", invert: true,  invertColor: "#2b2b2b" },
   { name: "blood",   blur: 6.0,   contrast: 5.2,  strokeWidth: 4.9, bgColor: "#ffe5e5", fontColor: "#ffc1c1", strokeColor: "#9d8082", invert: false,  invertColor: "#262626" },
   { name: "lava lamp",    blur: 4.1,   contrast: 20.0, strokeWidth: 3.0, bgColor: "#ffffff", fontColor: "#e56667", strokeColor: "#00ff05", invert: true,   invertColor: "#3a3a3a" },
-  { name: "vinegar",     blur: 6.0,   contrast: 20.0, strokeWidth: 2.0, bgColor: "#b9b9b9", fontColor: "#bb67bf", strokeColor: "#3eff17", invert: false,  invertColor: "#0d0020" },
+  { name: "balsamic vinegar",     blur: 6.0,   contrast: 20.0, strokeWidth: 2.0, bgColor: "#b9b9b9", fontColor: "#bb67bf", strokeColor: "#3eff17", invert: false,  invertColor: "#0d0020" },
   { name: "terminal",     blur: 4.7,   contrast: 6.6,  strokeWidth: 4.7, bgColor: "#000000", fontColor: "#6f4770", strokeColor: "#72ff78", invert: false, invertColor: "#262626" },
-  { name: "caterpillar", blur: 3.0,   contrast: 15.5,    strokeWidth: 2.6, bgColor: "#4c0000", fontColor: "#e68aea", strokeColor: "#6afd71", invert: true,  invertColor: "#e5e5e5" },
-  { name: "noctiluca",    blur: 3.6,   contrast: 8.3,   strokeWidth: 4.7, bgColor: "#936033", fontColor: "#2992ab", strokeColor: "#b3a4a3", invert: false, invertColor: "#262626" },
+  { name: "cactus flower", blur: 3.0,   contrast: 15.5,    strokeWidth: 2.6, bgColor: "#4c0000", fontColor: "#e68aea", strokeColor: "#52ff5a", invert: true,  invertColor: "#e5e5e5" },
+  { name: "noctiluca",    blur: 3.6,   contrast: 8.3,   strokeWidth: 4.7, bgColor: "#936033", fontColor: "#2992ab", strokeColor: "#b3a4a3", invert: true, invertColor: "#000b24" },
   { name: "glacier",    blur: 4.8,   contrast: 2.6,   strokeWidth: 4.1, bgColor: "#cf9eff", fontColor: "#000000", strokeColor: "#00d5ff", invert: false, invertColor: "#262626" },
   { name: "spiral mesh",    blur: 4.3,   contrast: 20.0,   strokeWidth: 3.2, bgColor: "#ff9494", fontColor: "#999999", strokeColor: "#ffffff", invert: true, invertColor: "#808080" },
   { name: "heatwave",    blur: 6.0,   contrast: 9.3,   strokeWidth: 8.4, bgColor: "#e75c5c", fontColor: "#642ffa", strokeColor: "#8aa2cf", invert: true, invertColor: "#3a3a3a" },
+  { name: "orthogonal",    blur: 0.0,   contrast: 20.0,   strokeWidth: 0.9, bgColor: "#000000", fontColor: "#000000", strokeColor: "#e0e7ff", invert: false, invertColor: "#40464f" },
+  { name: "molecular dynamics",    blur: 3.2,   contrast: 10.8,   strokeWidth: 3.8, bgColor: "#936033", fontColor: "#559daf", strokeColor: "#c39b98", invert: false, invertColor: "#40464f" },
 ]
 
 let allGlyphs: Record<string, Glyph> | null = null
