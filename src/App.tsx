@@ -394,7 +394,7 @@ export default function App() {
     <div className="absolute top-0 left-0 p-6 w-full h-full bg-[#242424] flex flex-col gap-6">
       <div className="shrink-0 w-full grid grid-cols-1 md:grid-cols-4 md:h-60 gap-6">
 
-        <div className="flex flex-col gap-4 z-10">
+        <div className="flex flex-col gap-4 z-10 h-auto">
           <p className={labelCls}>1. text</p>
 
           {/* ── text presets ── */}
@@ -414,7 +414,7 @@ export default function App() {
 
           {/* ── russian keyboard ── */}
           <div className="relative">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-6 p-2 pt-4 rounded-md w-auto bg-[#242424] flex flex-col gap-1 items-center z-40">
+            <div className="relative md:absolute top-0 left-1/2 -translate-x-1/2 md:-translate-y-6 md:p-2 md:pt-4 rounded-md w-auto bg-[#242424] flex flex-col gap-1 items-center z-40">
               {KB_ROWS.map((row, i) => (
                 <div key={i} className="flex gap-1">
                   {row.map(ch => (
